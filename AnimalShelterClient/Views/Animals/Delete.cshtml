@@ -4,11 +4,14 @@
 
 @model AnimalShelterClient.Models.Animal
 
-<h4>Are you sure you want to delete @Model.Name?</h4>
+<div class="card" style="width: 30rem;" id="home">
+  <h2>Delete</h2>
+  <h4>Are you sure you want to delete @Model.Name?</h4>
 
-@using (Html.BeginForm())
-{
-  <input type="submit" value="Delete" class="btn btn-primary"/>
-}
+  @using (Html.BeginForm())
+  {
+    <input type="submit" value="Delete" class="btn btn-primary"/>
+  }
 
-@Html.ActionLink("Back to details", "Details", new { id = @Model.AnimalId})
+  @Html.ActionLink("Back to details", "Details", new { id = @Model.AnimalId})
+</div>

@@ -2,16 +2,18 @@
     ViewData["Title"] = "Animals";
 }
 
-<h1>All Shelter Animals:</h1>
+<div class="card" style="width: 30rem;" id="home">
+  <h1>All Shelter Animals:</h1>
 
-<h3>Actions:</h3>
+  <h3>Actions:</h3>
 
-<p>@Html.ActionLink("Add a new animal to the shelter", "Create")</p>
+  <p>@Html.ActionLink("Add a new animal to the shelter", "Create")</p>
 
-<h3>Animals:</h3>
-<ol>
-@foreach (Animal animal in Model)
-{
-  <li><strong>@animal.Name</strong> the @animal.Breed | <a href="/Animals/Details/@(animal.AnimalId)">View Details</a></li>
-}
-</ol>
+  <h3>Animals:</h3>
+  <ol>
+  @foreach (Animal animal in Model)
+  {
+    <li><strong>@animal.Name</strong> the @animal.Breed | <a href="/Animals/Details/@(animal.AnimalId)">View Details</a></li>
+  }
+  </ol>
+</div>

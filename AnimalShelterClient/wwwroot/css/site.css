@@ -15,4 +15,20 @@ html {
 
 body {
   margin-bottom: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url("./puppy.jpg");
+	opacity: 0.84;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: auto;
+	background-attachment: fixed;
+}
+
+#home {
+	background-color: aliceblue;
+	width: 75%; 
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: .80;
 }
