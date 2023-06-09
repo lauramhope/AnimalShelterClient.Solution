@@ -1,3 +1,5 @@
+#nullable enable
+
 namespace AnimalShelterClient.Models;
 
 public class ErrorViewModel
